@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+
+/** Careers */
+
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 !important;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.15px;
+  font-weight: 700;
+  color: #1E1E1E;
+}
+
+h3,
+#filter-count {
+  margin: 0 0 36px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #1E1E1E;
+}
+
+#filter-count {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.filter-container {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 0 24px !important;
+}
+
+.filter-container .filter-label {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #626668;
+}
+
+.filter-container .select2-container {
+  width: 100% !important;
+}
+
+.filter-container .select2-container a {
+  height: auto;
+  padding: .5rem 16px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1E1E1E;
+  background: transparent;
+  border: 2px solid #B2B2B3;
+  border-radius: 8px;
+}
+
+.select2-container .select2-choice .select2-arrow {
+  width: 24px;
+  right: 12px;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+  background: center center / 24px 24px no-repeat url('https://staging-comredesign.kinsta.cloud/wp-content/uploads/2022/03/icon-chevron-down.svg') !important;
+}
+
+.filter-container .select2-container.select2-container-active a {
+  border-color: #0097AE;
+}
+
+.filter-container .select2-container.select2-container-active .select2-choice .select2-arrow {
+  transform: rotate(180deg);
+}
+
+.select2-container.select2-container-active {
+  background-color: #FFFFFF;
+}
+
+.select2-drop {
+  border: 2px solid #0097AE;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 0;
+  transform: translateY(-5px);
+}
+
+.select2-chosen,
+.select2-arrow {
+  background-color: transparent !important;
+}
+
+.select2-results .select2-result-label {
+  padding: 6px 12px;
+}
+
+.select2-results .select2-highlighted {
+  background-color: #1e1e1e;
+}
+
+.opening {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.child {
+  margin-left: 0;
+}
+
+.level-0 a {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.level-0 .location {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+  color: #0C8668;
+}
+
+
+@media only screen and (min-width: 960px) {
+  h2 {
+    margin: 0;
+  }
+
+  #board_title,
+  .filter-container {
+    width: 50% !important;
+    float: left;
+  }
+
+  #board_title {
+    margin: 36px 0 0;
+  }
+
+  .filter-container {
+    margin: 0 0 36px !important;
+  }
+
+  .level-0 {
+    clear: both;
+  }
+
+  .level-0 a {
+    transition: color .3s;
+  }
+
+  .level-0 a:hover {
+    color: #1E1E1E75;
+  }
+}
+
+
+/** Careers > Positions */
+
+#app_body {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+#app_body .logo-container {
+  display: none;
+}
+
+#app_body #header {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+#app_body #header h1 {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400 !important;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #1E1E1E;
+}
+
+#app_body #header .company-name {
+  display: none;
+}
+
+#app_body #header .location {
+  margin-top: 0;
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+  color: #0C8668;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#app_body #content p,
+#app_body #content ul {
+  text-align: left !important;
+}
+
+#app_body #content p,
+#application_form p,
+#application_form h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+  color: #1E1E1E;
+}
+
+#app_body #content ul,
+#application_form ul {
+  padding: 0 0 0 30px;
+}
+
+#app_body #content ul li,
+#application_form ul li {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+}
+
+#app_body #content ul li:first-child,
+#application_form ul li:first-child {
+  margin-top: 0;
+}
+
+#app_body #content a {
+  color: #0C8668;
+}
+
+#app_body #application {
+  max-width: 100%;
+  margin-top: 48px;
+}
+
+#application_form strong {
+  margin-bottom: 16px;
+  display: block;
+}
+
+#application_form p strong {
+  margin: 0;
+  display: inline;
+}
+
+#application_form input[type="text"],
+#application_form textarea {
+  width: 100% !important;
+  padding: 8px 16px !important;
+  color: #1E1E1E;
+  font-size: 16px !important;
+  line-height: 32px;
+  background-color: #FAFAFA !important;
+	border: 2px solid #CCC !important;
+  border-radius: 8px !important;
+}
+
+#application_form input:focus,
+#application_form textarea:focus,
+#application_form select:focus {
+	border-color: #0097AE;
+  outline: none;
+}
+
+#application_form input[type="button"] {
+	padding: 12px 48px !important;
+	font-size: 16px !important;
+	font-weight: 700 !important;
+	line-height: 1 !important;
+	text-transform: uppercase !important;
+  background-color: #FFFFFF00;
+  color: #1E1E1E !important;
+  border: 2px solid #1E1E1E !important;
+	border-radius: 8px !important;
+  text-shadow: none !important;
+  transition: color .2s, background-color .2s;
+}
+
+#application_form input[type="button"]:hover,
+#application_form input[type="button"]:focus,
+#application_form input[type="button"]:active {
+  color: #FFFFFF !important;
+  background-color: #1E1E1E !important;
+}
+
+#application_form .select2-container {
+  width: 100% !important;
+}
+
+#application_form .select2-container a {
+  height: auto;
+  padding: .5rem 16px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1E1E1E;
+  background: transparent;
+  border: 2px solid #B2B2B3;
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+
+#application_form .select2-container a:hover {
+  color: #1E1E1E !important;
+}
+
+#application_form .select2-container .select2-choice .select2-arrow {
+  width: 24px;
+  right: 12px;
+}
+
+#application_form .select2-container .select2-choice .select2-arrow b {
+  background: center center / 24px 24px no-repeat url('https://staging-comredesign.kinsta.cloud/wp-content/uploads/2022/03/icon-chevron-down.svg') !important;
+}
+
+#application_form .select2-container.select2-container-active a {
+  border-color: #0097AE;
+}
+
+#application_form .select2-container.select2-container-active .select2-choice .select2-arrow {
+  transform: rotate(180deg);
+}
+
+#application_form label {
+  float: none !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 0.75px !important;
+  line-height: 32px !important;
+	color: #626668 !important;
+}
+
+#eeoc_fields > a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+#application_form a {
+  color: #1E1E1E;
+  text-decoration: underline;
+  transition: .2s color;
+}
+
+#application_form a:hover {
+  color: #1E1E1E75;
+}
+
+#application_form #disability_status_header {
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 960px) {
+  #app_body {
+    max-width: calc((100% / 12) * 5);
+    margin-left: calc(100% / 12);
+  }
+}
+
